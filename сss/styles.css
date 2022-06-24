@@ -30,36 +30,22 @@ body {
 
 /* UI */
 .logo-header {
-    font-family: var(--font-family-logo) ;
-    color: var(--color);
-    text-decoration: none;
-    line-height: 1.1923;
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
+    font-family: var(--font-family-logo);
+    color: var(--color-background-fourth);
     font-weight: 700;
     font-size: 26px;
-    letter-spacing: 0.03em;
-         
-    }
+    line-height: 1.1923;
+    text-decoration: none;
+   }
 
-.logo-text-header {
-    font-family: var(--font-family-logo) ;
+.logo-header-text {
+    font-family: var(--font-family-logo);
     color: var(--color-logo-header);
-    text-decoration: none;
-    line-height: 1.1923;
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
     font-weight: 700;
     font-size: 26px;
-    letter-spacing: 0.03em;
-    
-    }
+    line-height: 1.1923;
+    text-decoration: none;
+}
 
 .hero-title-title {
     color: var(--color-secondary);
@@ -93,6 +79,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }  
 
 .button:hover {
@@ -192,6 +179,36 @@ header {
 }
 
 /* Portfolio */
+.button-filter {
+    color: var(--color-primary) ;
+    background-color: var(--color-background-fifth);
+    border-radius: 4px;
+    text-align: center;
+    font-family: inherit;
+    line-height: 1.625;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}  
+
+.button-filter:hover {
+    background-color: var(--color-background-fourth);
+    color: var(--color-secondary);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}    
+
+.button-filter:focus {
+    background-color: var(--color-background-fourth);
+    color: var(--color-secondary);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+} 
+
+.button:active {
+    background-color: var(--color-background-fourth);
+    color: var(--color-secondary);
+} 
+
 .filters-item {
     font-family: var(--font-family-primary);
     color: var(--color-primary);
@@ -208,20 +225,20 @@ header {
     color: var(--color-secondary);
 }
 
-
 .subtitle-project-item {
     font-family: var(--font-family-primary);
     color: var(--color-primary) ;
-    font-style: bold;
+    font-weight: 700;
     Font-size: 18px;
     line-height: 2.0;
+    letter-spacing: 00.06em;
     text-align: left;
 }
 
 .subtitle-project-item-text {
     font-family: var(--font-family-primary);
     color: var(--color-third) ;
-    font-style: regular;
+    font-weight: 400;
     Font-size: 16px;
     line-height: 1.875;
     text-align: left;
@@ -235,29 +252,28 @@ footer {
 
 .logo-footer {
     font-family: var(--font-family-logo) ;
-    color: var(--color);
-    text-decoration: none;
-    line-height: 1.1923;
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
+    color: var(--color-background-fourth);
     font-weight: 700;
     font-size: 26px;
-    letter-spacing: 0.03em;
+    line-height: 1.1923;
+    text-decoration: none;
 }
 
-.logo-text-footer {
+.logo-footer-text {
+    font-family: var(--font-family-logo) ;
     color: var(--color-logo-footer);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    text-decoration: none;
 }
-
 .address-item {
     color: var(--color-secondary); 
     font-weight: 400;
     text-decoration: none;
     line-height: 1.7142;
     text-align: left;
+    font-style: normal;
 }
 
 .address-item-link {
@@ -266,6 +282,7 @@ footer {
     font-weight: 400;
     line-height: 1.7142;
     text-align: left;
+    font-style: normal;
 }
 
 .address-item:hover,
