@@ -5,6 +5,8 @@
     --color: #2196F3;
     --color-third: #757575;
     --color-fourth: rgba(255, 255, 255, 0.6);
+    --color-logo-header: #000000;
+    --color-logo-footer: #FFFFFF;
     --color-background-primary: #E5E5E5;  
     --color-background-secondary: #2F303A;
     --color-background-third: #FFFFFF;
@@ -20,11 +22,14 @@ body {
     font-family: var(--font-family-primary);
     color: var(--color-primary);
     background-color: var(--color-background-primary);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
 
 }
 
 /* UI */
-.logo {
+.logo-header {
     font-family: var(--font-family-logo) ;
     color: var(--color);
     text-decoration: none;
@@ -34,11 +39,26 @@ body {
     height: 31px;
     left: 215px;
     top: 24px;
-    font-style: bold;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
-       
+         
+    }
+
+.logo-text-header {
+    font-family: var(--font-family-logo) ;
+    color: var(--color-logo-header);
+    text-decoration: none;
+    line-height: 1.1923;
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    
     }
 
 .hero-title-title {
@@ -48,6 +68,8 @@ body {
     font-size: 44px;
     line-height: 1.3636;
     text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     }
 
 .title {
@@ -56,6 +78,8 @@ body {
     font-size: 36px;
     line-height: 0.8571;
     text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.06em;
     }
 
 .button {
@@ -65,8 +89,10 @@ body {
     border-radius: 4px;
     text-align: center;
     font-family: inherit;
-    font-style: bold;
     line-height: 1.875;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
 }  
 
 .button:hover {
@@ -89,10 +115,9 @@ header {
 /* Menu */
 .nav-menu-link {
     color: var(--color-primary);
-    font-size: 14px;
     text-decoration: none;
     line-height: 1.1428;
-    font-style: medium;
+    font-weight: 500;
     text-align: left;
 }
 
@@ -104,22 +129,22 @@ header {
     color: var(--color);
 }
 /* Menu-contacs */
-.menu-link {
-    color: var(--color-primary);
-    font-size: 14px;
+.menu-link-item {
+    color: var(--color-third);
     text-decoration: none;
     line-height: 1.1428;
-    font-style: medium;
+    font-weight: 500;
     text-align: left;
 }
 
-.menu-link:hover {
+.menu-link-item:hover {
     color: var(--color);
 }
 
-.menu-link:focus {
+.menu-link-item:focus {
     color: var(--color);
 }
+
 
 /* Hero section */
 .hero-title {
@@ -134,7 +159,7 @@ header {
     text-transform: uppercase;
     font-family: var(--font-family-primary);
     color: var(--color-primary);
-    font-style: bold;
+    font-weight: 700;
     Font-size: 14px;
     line-height: 1.1428;
     text-align: left;
@@ -143,8 +168,7 @@ header {
 .text-item {
     font-family: var(--font-family-primary);
     color: var(--color-third);
-    font-style: regular;
-    Font-size: 14px;
+    font-weight: 400;
     line-height: 1.7142;
     text-align: left;
 }
@@ -152,7 +176,7 @@ header {
 .subtitle-images-item {
     font-family: var(--font-family-primary);
     color: var(--color-primary) ;
-    font-style: medium;
+    font-weight: 500;
     Font-size: 16px;
     line-height: 1.1875;
     text-align: center;
@@ -161,7 +185,7 @@ header {
 .subtitle-images-item-text {
     font-family: var(--font-family-primary);
     color: var(--color-third) ;
-    font-style: regular;
+    font-weight: 400;
     Font-size: 16px;
     line-height: 1.1875;
     text-align: center;
@@ -205,11 +229,11 @@ header {
 
 /* Footer */
 footer {
-    background-color: #2F303A;
-    font-style: normal;
+    background-color: var(--color-background-secondary);
+        
 }
 
-.logo {
+.logo-footer {
     font-family: var(--font-family-logo) ;
     color: var(--color);
     text-decoration: none;
@@ -219,24 +243,29 @@ footer {
     height: 31px;
     left: 215px;
     top: 24px;
-    font-style: bold;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
 }
 
+.logo-text-footer {
+    color: var(--color-logo-footer);
+}
+
 .address-item {
     color: var(--color-secondary); 
-    font-style: normal;
-    font-size: 14px;
+    font-weight: 400;
     text-decoration: none;
+    line-height: 1.7142;
+    text-align: left;
 }
 
 .address-item-link {
     color: var(--color-fourth);
-    font-style: normal;
-    font-size: 14px;
     text-decoration: none;
+    font-weight: 400;
+    line-height: 1.7142;
+    text-align: left;
 }
 
 .address-item:hover,
